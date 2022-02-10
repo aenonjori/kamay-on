@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+<style>
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+body{
+  overflow-x: hidden;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 25px 16px;
+  text-decoration: none;
+  background-color: white;
+  font-size: 24px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+li a:hover {
+  background-color: rgb(156, 156, 156);
+}
+img{
+  width: 100%;
+  height: 30%;
+}
+.overlay{
+  position: absolute;
+  height: 60%;
+  width: 88%;
+  background-color: rgb(247, 247, 247);
+  opacity: 0.5;
+  top: 15%;
+  left: 6%;
+}
+.container{
+  padding: 2px 16px 20px;
+}
+.card{
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  width: 20%;
+  border-radius: 5px;
+  font-family: 'Questrial', sans-serif;
+  position: relative;
+}
+.card1{
+  border-radius: 1px 5px 0 0;
+}
+#c1{
+  position: absolute;
+  top: 110%;
+  left: 26%;
+}
+#c2{
+  position: absolute;
+  top: 110%;
+  left: 0.89%;
+}
+#c3{
+  position: absolute;
+  top: 110%;
+  left: 52.5%;
+}
+#c4{
+  position: absolute;
+  top: 110%;
+  left: 79.1%;
+}
+.tabe{
+  position: absolute;
+  top: 195%;
+  height: 50%;
+  width: 80%;
+  left: 10%;
+}
+#icon{
+  width: 150px;
+}
+.form-group{
+  position: absolute;
+  top: 290%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Our Partners</a></li>
+  <li><a href="#contact">About the Organization</a></li>
+  <li><a href="#about">Join Us!</a></li>
+</ul>
+<!-- Data Binding -->
+<img id="header" src={{imageUrl}}/>
+<div style="font-size: 78px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+position: absolute; top: 20%; left: 30%; z-index: 1;">
+{{appName}}</div>
+<div style="font-size: 58px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+position: absolute; top: 32%; left:27%; z-index: 1;">{{appName2}}</div>
+<div class="overlay"></div>
+<hr>
+
+<p [class]="appliedCSSClass" stlye="font-family:Lucida Console">Join our Research Conferences around the Globe</p>
+<hr>
+<!--Cards-->
+<div class="card" id="c1">
+  <img class="card1" src="assets/img/seoul.jpg" style="width:100%;">
+  <div class="container">
+  <h4 style="font-size: 22px; "><b>Seoul</b></h4>
+  <hr>
+  <p>The largest country in Western Europe,
+    has long been a gateway between the continents 
+    northern and southern regions.</p>
+    <hr>
+  <p>Architecture</p>
+  <hr>
+  <p>Cultural Events</p>
+  <hr>
+  <p>Safety and Security</p>
+  <hr>
+  <a href="Learn More">Learn More</a>
+</div></div>
+
+<div class="card" id="c2">
+  <img class="card1" src="assets/img/france.jpg" style="width:100%;">
+  <div class="container">
+  <h4 style="font-size: 22px; "><b>France</b></h4>
+  <hr>
+  <p>The largest country in Western Europe,
+    has long been a gateway between the continents 
+    northern and southern regions.</p>
+    <hr>
+  <p>Architecture</p>
+  <hr>
+  <p>Cultural Events</p>
+  <hr>
+  <p>Safety and Security</p>
+  <hr>
+  <a href="Learn More">Learn More</a>
+</div></div>
+
+
+<div class="card" id="c3">
+  <img class="card1" src="assets/img/sanfran.jpg" style="width:100%;">
+  <div class="container">
+  <h4 style="font-size: 22px; "><b>San Francisco</b></h4>
+  <hr>
+  <p>The largest country in Western Europe,
+    has long been a gateway between the continents 
+    northern and southern regions.</p>
+    <hr>
+    <p>Architecture</p>
+    <hr>
+    <p>Cultural Events</p>
+    <hr>
+    <p>Safety and Security</p>
+    <hr>
+    <a href="Learn More">Learn More</a>
+</div></div>
+
+
+<div class="card" id="c4">
+  <img class="card1" src="assets/img/boston.jpg" style="width:100%;">
+  <div class="container">
+  <h4 style="font-size: 22px; "><b>Boston</b></h4>
+  <hr>
+  <p>The largest country in Western Europe,
+    has long been a gateway between the continents 
+    northern and southern regions.</p>
+    <hr>
+    <p>Architecture</p>
+    <hr>
+    <p>Cultural Events</p>
+    <hr>
+    <p>Safety and Security</p>
+    <hr>
+    <a href="Learn More">Learn More</a>
+</div></div>
+
+<p [class]="appliedCSS" stlye="font-family:Lucida Console">Below are our Corporate Partners</p>
+
+<div class="tabe">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+          <th><B>Company</B></th>
+          <th><B>Trademark</B></th>
+          <th><B>Sponsorship</B></th>
+          <th><B>Go to Website</B></th>
+      </tr>
+    </thead>
+  <tbody>
+    <tr *ngFor="let u of partners">
+      <td>{{u.company}}</td>
+      <td><img id="icon" [src]="u.trademark"/></td>
+      <td>{{u.sponsorship}}</td>
+      <td><a [href]="u.website">Visit Website</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+
+<hr>
+<form class="form-group">
+  FirstName: <input name="name" type="text" [(ngModel)] = "Fname" class="feedback-input" placeholder="Name" />  
+  LastName: <input name="lastname" type="text" [(ngModel)] = "Lname" class="feedback-input" placeholder="Lastname" /><br>
+  <br><p>Fullname: <b>{{Fname}} {{Lname}}</b></p>
+  Enter Email Address: <input name= "email" type="text" [(ngModel)]="Email" class="feedback-input" placeholder="Email" /><br>
+  <br><p>Email: <b>{{Email}}</b></p>
+  Enter Institution/Affiliation<input name = "ins" type="text" [(ngModel)]="School" class="feedback-input" placeholder="Institution" />
+  <br><p>Academic Institution: <b>{{Email}}</b></p>
+  </form>
+
+
+</body>
+</html>
+
+
